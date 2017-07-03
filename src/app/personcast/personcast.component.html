@@ -1,8 +1,8 @@
 <md-card *ngIf="credits.length > 0">
-    <md-toolbar color= "accent">
+    <md-toolbar color= "primary">
         <button md-button id="subprincipal" (click)="changeState();">
-            <md-icon *ngIf="!active" color="primary">add</md-icon>
-            <md-icon *ngIf="active" color="primary">remove</md-icon>
+            <md-icon *ngIf="!active" color="accent">add</md-icon>
+            <md-icon *ngIf="active" color="accent">remove</md-icon>
             Cast
         </button>
     </md-toolbar>

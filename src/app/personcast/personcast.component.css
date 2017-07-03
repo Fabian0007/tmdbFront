@@ -12,3 +12,7 @@ a{
 .icons{
     font-size:13px;
 }
+
+#total{
+    background-image: url('assets/images/background.jpg');
+}

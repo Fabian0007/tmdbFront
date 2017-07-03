@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
   focus:boolean=false;
   colorsPersons:Array<string>=[];
   colorsMovies:Array<string>=[];
-  color:string="#C00201";
+  color:string="#AA0201";
   totalPages:number;
   @Input() preview:boolean;
 

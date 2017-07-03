@@ -34,3 +34,7 @@ a{
 h3{
   color:#FFFFFF;
 }
+
+all-results{
+  z-index: 1;
+}

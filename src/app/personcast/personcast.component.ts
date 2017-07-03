@@ -12,8 +12,8 @@ export class PersoncastComponent implements OnInit, OnChanges {
   active:boolean = false;
   orderUp:boolean = false;
   parameter:string ="Date";
-  borderColorDate:string="#FFC107";
-  borderColorAlphabetic:string="#673ab7";
+  borderColorDate:string="#FFFFFF";
+  borderColorAlphabetic:string="#DC0202";
 
   constructor(private route: ActivatedRoute,
   		private router: Router){}
@@ -41,8 +41,8 @@ export class PersoncastComponent implements OnInit, OnChanges {
   * Makes date the new ordering parameter
   */
   changeParameterDate() {
-    this.borderColorDate="#FFC107";
-    this.borderColorAlphabetic="#673ab7";
+    this.borderColorDate="#FFFFFF";
+    this.borderColorAlphabetic="#DC0202";
     this.parameter="Date";
     this.doSort();
   }  
@@ -51,8 +51,8 @@ export class PersoncastComponent implements OnInit, OnChanges {
   * Makes alphabetic the new ordering parameter
   */
   changeParameterAlphabetic() {
-    this.borderColorAlphabetic="#FFC107";
-    this.borderColorDate="#673ab7";
+    this.borderColorAlphabetic="#FFFFFF";
+    this.borderColorDate="#DC0202";
     this.parameter="Alphabetic";
     this.doSort();
   }  
@@ -72,8 +72,8 @@ export class PersoncastComponent implements OnInit, OnChanges {
     this.active = false;
     this.orderUp = false;
     this.parameter ="Date";
-    this.borderColorDate="#FFC107";
-    this.borderColorAlphabetic="#673ab7";
+    this.borderColorDate="#FFFFFF";
+    this.borderColorAlphabetic="#DC0202";
     this.doSort();
   }
   

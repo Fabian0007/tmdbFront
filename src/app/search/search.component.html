@@ -8,7 +8,7 @@
 <md-input dividerColor="accent" (blur)="changeFocus(false)" (focus)="changeFocus(true)" placeholder="Search for an Actor, Actress, or Movie" value="" [(ngModel)]="search" (ngModelChange)="doSearch($event)">
 </md-input>
 
-<div (mouseleave)="changeState(false)" (mouseover)="changeState(true)">
+<div id="all-results" (mouseleave)="changeState(false)" (mouseover)="changeState(true)">
     <div [hidden]="!((resultsPersons.length> 0 || resultsMovies.length > 0) && (active || focus))" class="pull-right" >
         <div *ngFor="let result of resultsPersons; let i = index;">
             <a (click)="goPerson(result.id)">

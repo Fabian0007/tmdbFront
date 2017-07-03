@@ -11,6 +11,8 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 export class PersonComponent implements OnInit {
   baseUrl = "http://image.tmdb.org/t/p/w300/";
   details = {};
+  limit;
+  profileImage;
   
 
   constructor(private movieService: MovieService, private route: ActivatedRoute,
@@ -22,6 +24,12 @@ export class PersonComponent implements OnInit {
       let id = params['id'];
       this.movieService.getPerson(id).subscribe(details => {
         this.details = details;
+        if(details.images.profiles.length == 1){
+          this.profileImage = details.images.profiles[0].file_path;
+        }
+        else{
+          this.profileImage = details.images.profiles[1].file_path;
+        }
       });
     });
   }
@@ -29,4 +37,9 @@ export class PersonComponent implements OnInit {
   getUrl(src: string): string {
     return `${this.baseUrl}${src}`;
   }
+  
+  getProfileImage():string{
+    return this.profileImage;
+	}
+  
 }
