@@ -4,3 +4,12 @@ a{
   font-size: 16px;
   cursor:pointer;
 }
+
+.total{
+	background-image: url('assets/images/background.jpg');
+	padding-top: 50px;
+}
+
+.min{
+  padding-top: 50px;
+}

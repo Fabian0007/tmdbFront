@@ -39,9 +39,9 @@ export class SearchexpandedComponent implements OnInit {
           .subscribe(resultsMovies => {
           this.resultsMovies=resultsMovies.results;
           this.numberPage=resultsMovies.total_pages;
-          this.colorsPagination = Array(this.numberPage).fill("#FFFFFF");
-          this.borderColorPerson="#ffd740";
-          this.borderColorMovie="#673ab7";
+          this.colorsPagination = Array(this.numberPage).fill("transparent");
+          this.borderColorPerson="#C30202";
+          this.borderColorMovie="#FFFFFF";
           this.setColorPagination();
       });
       }else{
@@ -49,9 +49,9 @@ export class SearchexpandedComponent implements OnInit {
           .subscribe(resultsPersons => {
           this.resultsPersons=resultsPersons.results;
           this.numberPage=resultsPersons.total_pages;
-          this.colorsPagination = Array(this.numberPage).fill("#FFFFFF");
-          this.borderColorPerson="#673ab7";
-          this.borderColorMovie="#ffd740";
+          this.colorsPagination = Array(this.numberPage).fill("transparent");
+          this.borderColorPerson="#FFFFFF";
+          this.borderColorMovie="#C30202";
           this.setColorPagination();
       });
       }
@@ -89,7 +89,7 @@ export class SearchexpandedComponent implements OnInit {
   * Change the background of the current page
   */ 
   setColorPagination(){
-    this.colorsPagination[this.page - 1]="#673AB7";
+    this.colorsPagination[this.page - 1]="#FFFFFF";
   } 
   
   /**
@@ -110,14 +110,14 @@ export class SearchexpandedComponent implements OnInit {
   * Add background of selected div
   */ 
   putColor(i:number){
-    this.colors[i]="#C6DEFF";
+    this.colors[i]="#000000";
   }
   
   /**
   * Remove background of selected div
   */ 
   removeColor(i:number){
-    this.colors[i]="#FFFFFF";
+    this.colors[i]="transparent";
   }
 
   /**

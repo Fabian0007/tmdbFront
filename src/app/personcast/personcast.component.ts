@@ -113,7 +113,7 @@ export class PersoncastComponent implements OnInit, OnChanges {
   }
   
   /**
-  * Redirect to a person
+  * Redirect to a movie
   */
   goMovie(id:number) {
     this.router.navigate(['/movie/'+id]);

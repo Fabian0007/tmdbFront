@@ -1,0 +1,104 @@
+.main-footer-panel{
+	color: white; 
+	position: relative;
+	overflow: hidden;
+}
+
+.footer-gradient{
+	height: 300px;
+	background: rgba(191,2,2,1);
+	background: -moz-linear-gradient(left, rgba(191,2,2,1) 0%, rgba(240,0,0,1) 51%, rgba(179,2,2,1) 99%, rgba(179,2,2,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(191,2,2,1)), color-stop(51%, rgba(240,0,0,1)), color-stop(99%, rgba(179,2,2,1)), color-stop(100%, rgba(179,2,2,1)));
+	background: -webkit-linear-gradient(left, rgba(191,2,2,1) 0%, rgba(240,0,0,1) 51%, rgba(179,2,2,1) 99%, rgba(179,2,2,1) 100%);
+	background: -o-linear-gradient(left, rgba(191,2,2,1) 0%, rgba(240,0,0,1) 51%, rgba(179,2,2,1) 99%, rgba(179,2,2,1) 100%);
+	background: -ms-linear-gradient(left, rgba(191,2,2,1) 0%, rgba(240,0,0,1) 51%, rgba(179,2,2,1) 99%, rgba(179,2,2,1) 100%);
+	background: linear-gradient(to right, rgba(191,2,2,1) 0%, rgba(240,0,0,1) 51%, rgba(179,2,2,1) 99%, rgba(179,2,2,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0202', endColorstr='#b30202', GradientType=1 );
+			
+}
+
+.footer-info-panel{
+	float: left;
+	width: 25%;
+	padding-top: 50px;
+}
+
+.footer-subtitle{
+	color: rgba(255,255,255,0.6);
+}
+
+.footer-white-title{
+	font-weight: bold; 
+	font-size: 20px;
+}
+
+.footer-ico{
+	padding-left: 10px; 
+	float:left;
+	background-repeat: no-repeat; 
+	height: 24px; 
+	width: 24px;
+}
+.social-media{
+	position: relative;
+	padding-top: 3px; 
+	margin-left:35%; 
+	width: 100%
+}
+
+.tag-link-footer{
+	cursor: pointer;
+	font-weight: bold;
+	color:rgba(255,255,255,0.4);
+	transition: all 300ms ease-in-out;
+}
+
+.tag-link-footer:hover{
+	color:white;
+	
+}
+
+
+.tmdb-logo{
+	cursor: pointer;
+	float: left;
+	margin-left:30%; 
+	opacity: 0.9; 
+	margin-top:5%; 
+	width: 60%; 
+	height:0; 
+	padding-bottom: 23%; 
+	background-size:cover; 
+	background-repeat:no-repeat; 
+	background-image:url('assets/images/tmdb-white-log.png');
+}
+.facebook{
+	background-image:url('assets/icons/facebook.png');
+}
+
+.github{
+	background-image:url('assets/icons/github.png'); 
+}
+
+.youtube{
+	background-image:url('assets/icons/youtube.png');
+}
+
+.footer-bottom-bar{
+	background-image:url('assets/images/footer_2.jpg'); 
+	height: 60px;
+}
+
+.footer-dark-title{
+	font-weight: bold; color: rgba(0,0,0,0.4);
+}
+
+.aboutme-link{
+	cursor: pointer;
+}
+
+.copyright{
+	float:left;
+	padding-left: 10%; 
+	padding-top: 5px;
+}

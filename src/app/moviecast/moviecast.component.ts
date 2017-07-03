@@ -12,8 +12,8 @@ export class MoviecastComponent implements OnInit, OnChanges {
   active:boolean = false;
   orderUp:boolean = false;
   parameter:string ="Relevance";
-  borderColorRelevance:string="#FFC107";
-  borderColorAlphabetic:string="#673ab7";
+  borderColorRelevance:string="#FFFFFF";
+  borderColorAlphabetic:string="#DC0202";
 
   constructor(private route: ActivatedRoute,
   		private router: Router){}
@@ -42,8 +42,8 @@ export class MoviecastComponent implements OnInit, OnChanges {
   * Makes relevance the new ordering parameter
   */
   changeParameterRelevance() {
-    this.borderColorRelevance="#FFC107";
-    this.borderColorAlphabetic="#673ab7";
+    this.borderColorRelevance="#FFFFFF";
+    this.borderColorAlphabetic="#DC0202";
     this.parameter="Relevance";
     this.doSort();
   }  
@@ -52,8 +52,8 @@ export class MoviecastComponent implements OnInit, OnChanges {
   * Makes alphabetic the new ordering parameter
   */
   changeParameterAlphabetic() {
-    this.borderColorAlphabetic="#FFC107";
-    this.borderColorRelevance="#673ab7";
+    this.borderColorAlphabetic="#FFFFFF";
+    this.borderColorRelevance="#DC0202";
     this.parameter="Alphabetic";
     this.doSort();
   }  
@@ -73,8 +73,8 @@ export class MoviecastComponent implements OnInit, OnChanges {
     this.active = false;
     this.orderUp = false;
     this.parameter ="Relevance";
-    this.borderColorRelevance="#FFC107";
-    this.borderColorAlphabetic="#673ab7";
+    this.borderColorRelevance="#FFFFFF";
+    this.borderColorAlphabetic="#DC0202";
     this.doSort();
   }
   

@@ -1,5 +1,14 @@
 <app-toolbar></app-toolbar>
-
-<app-topmovies [preview]= true></app-topmovies>
-<app-upcoming [preview]= true></app-upcoming>
-<app-intheaters [preview]= true></app-intheaters>
+<div class= "main-panel">
+	<div class="container">
+		<video autoplay="true" muted loop  onloadedmetadata="this.muted = true">
+			<source src="assets/videos/MovieMashup.mp4" type="video/mp4">
+		</video>
+		<p align="center" class="text"> TMDB++</p>
+		<p align="center" class="subtitle">More than just movies</p>
+		<div align="center"  class="btn-container">
+			<button  (click)="goMovies();" class="btn">Come on!</button>
+		</div>	
+	</div>
+</div>
+<app-footer></app-footer>

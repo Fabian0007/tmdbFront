@@ -1,17 +1,27 @@
-import { Component } from '@angular/core';
-
-
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit{
   
   baseUrl = "http://image.tmdb.org/t/p/w300/";
 
-  constructor(){}
+    constructor(private route: ActivatedRoute,
+  		private router: Router) { }
+
+  ngOnInit() {
+  }
+  
+  /**
+  * Redirect to the home
+  */
+  goMovies() {
+    this.router.navigate(['movies']);
+  }
 
     /**
    * Get the Total Url of image

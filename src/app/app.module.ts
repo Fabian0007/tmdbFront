@@ -27,6 +27,8 @@ import { PersonComponent } from './person/person.component';
 import { PersoncastComponent } from './personcast/personcast.component';
 import { PersoncrewComponent } from './personcrew/personcrew.component';
 import { SearchexpandedComponent } from './searchexpanded/searchexpanded.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomemoviesComponent } from './homemovies/homemovies.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { SearchexpandedComponent } from './searchexpanded/searchexpanded.compone
     PersonComponent,
     PersoncastComponent,
     PersoncrewComponent,
-    SearchexpandedComponent
+    SearchexpandedComponent,
+    FooterComponent,
+    HomemoviesComponent
   ],
   imports: [
     MaterialModule.forRoot(),

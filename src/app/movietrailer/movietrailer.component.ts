@@ -8,6 +8,8 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 })
 export class MovietrailerComponent implements OnInit, OnChanges {
   @Input() key: string;
+  @Input() title: string;
+  @Input() overview: string;
   active:boolean=false;
   url: SafeResourceUrl;
   sanitizer:any;
@@ -23,7 +25,7 @@ export class MovietrailerComponent implements OnInit, OnChanges {
   }
   
   getUrlVideo(): string {
-      return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.key}/?rel=0&`);
+      return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.key}/?rel=0&modestbranding=1&autohide=1&showinfo=0`);
   }
   
   changeState() {

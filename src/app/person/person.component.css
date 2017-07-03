@@ -14,3 +14,9 @@
 a{
   text-decoration:none
 }
+
+.main-panel{
+	background-image: url('assets/images/background.jpg'); 
+	padding-top: 100px; 
+	padding-bottom: 100px;
+}

@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
   focus:boolean=false;
   colorsPersons:Array<string>=[];
   colorsMovies:Array<string>=[];
-  color:string="#FFFFFF";
+  color:string="#C00201";
   totalPages:number;
   @Input() preview:boolean;
 
@@ -49,42 +49,42 @@ export class SearchComponent implements OnInit {
   * Shade background of "see all results"
   */
   putColor(){
-    this.color="#C6DEFF";
+    this.color="#AA0201";
   }
   
   /**
   * clear background of "see all results"
   */
   removeColor(){
-    this.color="#FFFFFF";
+    this.color="#C00201";
   }
   
   /**
   * Shade background of result of person
   */
   putColorPersons(i:number){
-    this.colorsPersons[i]="#C6DEFF";
+    this.colorsPersons[i]="#AA0201";
   }
   
   /**
   * Shade background of result of movie
   */
   putColorMovies(i:number){
-    this.colorsMovies[i]="#C6DEFF";
+    this.colorsMovies[i]="#AA0201";
   }
   
   /**
   * Clear background of result of person
   */
   removeColorPersons(i:number){
-    this.colorsPersons[i]="#FFFFFF";
+    this.colorsPersons[i]="#C00201";
   }
   
   /**
   * Clear background of result of movie
   */
   removeColorMovies(i:number){
-    this.colorsMovies[i]="#FFFFFF";
+    this.colorsMovies[i]="#C00201";
   }
   
   /**
@@ -106,14 +106,14 @@ export class SearchComponent implements OnInit {
       .subscribe(resultsPersons => {
         this.resultsPersons=resultsPersons.results.slice(0,3);
         for(let i=0;i<this.resultsPersons.length;i++){
-          this.colorsPersons[i]="#FFFFFF";
+          this.colorsPersons[i]="#C00201";
         }
       });
       this.movieService.getSearchMovie(this.search, 1)
       .subscribe(resultsMovies => {
         this.resultsMovies=resultsMovies.results.slice(0,3);
         for(let i=0;i<this.resultsPersons.length;i++){
-          this.colorsMovies[i]="#FFFFFF";
+          this.colorsMovies[i]="#C00201";
         }
       });
       
